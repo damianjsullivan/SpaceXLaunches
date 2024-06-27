@@ -13,4 +13,11 @@ struct Reddit {
     let launch: String?
     let media: String?
     let recovery: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case campaign = "campaign"
+        case launch = "launch"
+        case media = "media"
+        case recovery = "recovery"
+    }
 }

@@ -11,4 +11,9 @@ import Foundation
 struct Patch {
     let small: String
     let large: String
+    
+    enum CodingKeys: String, CodingKey {
+        case small = "small"
+        case large = "large"
+    }
 }

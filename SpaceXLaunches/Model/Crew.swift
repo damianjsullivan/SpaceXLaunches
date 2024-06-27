@@ -11,4 +11,9 @@ import Foundation
 struct Crew {
     let crew: String
     let role: String
+    
+    enum CodingKeys: String, CodingKey {
+        case crew = "crew"
+        case role = "role"
+    }
 }

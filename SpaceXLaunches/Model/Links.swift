@@ -17,4 +17,15 @@ struct Links {
     let youtubeID: String
     let article: String?
     let wikipedia: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case patch = "patch"
+        case reddit = "reddit"
+        case flickr = "flickr"
+        case presskit = "presskit"
+        case webcast = "webcast"
+        case youtubeID = "youtube_id"
+        case article = "article"
+        case wikipedia = "wikipedia"
+    }
 }

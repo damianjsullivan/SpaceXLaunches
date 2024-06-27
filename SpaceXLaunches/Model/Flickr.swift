@@ -11,4 +11,9 @@ import Foundation
 struct Flickr {
     let small: [String]
     let original: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case small = "small"
+        case original = "original"
+    }
 }

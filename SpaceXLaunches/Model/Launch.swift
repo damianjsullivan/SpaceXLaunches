@@ -36,4 +36,34 @@ struct Launch {
     let tbd: Bool
     let launchLibraryID: UUID?
     let id: String
+    
+    enum CodingKeys: String, CodingKey {
+        case fairings = "fairings"
+        case links = "links"
+        case staticFireDateUTC = "static_fire_date_utc"
+        case staticFireDateUnix = "static_fire_date_unix"
+        case net = "net"
+        case window = "window"
+        case rocket = "rocket"
+        case success = "success"
+        case failures = "failures"
+        case details = "details"
+        case crew = "crew"
+        case ships = "ships"
+        case capsules = "capsules"
+        case payloads = "payloads"
+        case launchpad = "launchpad"
+        case flightNumber = "flight_number"
+        case name = "name"
+        case dateUTC = "date_utc"
+        case dateUnix = "date_unix"
+        case dateLocal = "date_local"
+        case datePrecision = "date_precision"
+        case upcoming = "upcoming"
+        case cores = "cores"
+        case autoUpdate = "auto_update"
+        case tbd = "tbd"
+        case launchLibraryID = "launch_library_id"
+        case id = "id"
+    }
 }

@@ -12,4 +12,10 @@ struct Failure {
     let time: Int
     let altitude: Int
     let reason: String
+    
+    enum CodingKeys: String, CodingKey {
+        case time = "time"
+        case altitude = "altitude"
+        case reason = "reason"
+    }
 }
