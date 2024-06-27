@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Reddit
-struct Reddit {
+struct Reddit: Codable {
     let campaign: String?
     let launch: String?
     let media: String?

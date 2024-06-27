@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Flickr
-struct Flickr {
+struct Flickr: Codable {
     let small: [String]
     let original: [String]
     

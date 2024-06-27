@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Fairings
-struct Fairings {
+struct Fairings: Codable {
     let reused: Bool
     let recoveryAttempt: Bool
     let recovered: Bool

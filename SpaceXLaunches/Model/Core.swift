@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Core
-struct Core {
+struct Core: Codable {
     let core: String
     let flight: Int
     let gridfins: Bool

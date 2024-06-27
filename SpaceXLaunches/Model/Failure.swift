@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Failure
-struct Failure {
+struct Failure: Codable {
     let time: Int
     let altitude: Int
     let reason: String

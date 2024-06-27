@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Crew
-struct Crew {
+struct Crew: Codable{
     let crew: String
     let role: String
     

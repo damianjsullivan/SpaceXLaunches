@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Patch
-struct Patch {
+struct Patch: Codable {
     let small: String
     let large: String
     

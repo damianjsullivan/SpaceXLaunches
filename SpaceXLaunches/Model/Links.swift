@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Links
-struct Links {
+struct Links: Codable {
     let patch: Patch
     let reddit: Reddit
     let flickr: Flickr
