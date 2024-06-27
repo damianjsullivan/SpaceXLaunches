@@ -24,6 +24,7 @@
 		2D5BBEDB2C2E141000816AC0 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEDA2C2E141000816AC0 /* Patch.swift */; };
 		2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEDC2C2E142500816AC0 /* Reddit.swift */; };
 		2D5BBEDF2C2E14BA00816AC0 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */; };
+		2D5BBEE22C2E294000816AC0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEE12C2E294000816AC0 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		2D5BBEDA2C2E141000816AC0 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
 		2D5BBEDC2C2E142500816AC0 /* Reddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
 		2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
+		2D5BBEE12C2E294000816AC0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,8 @@
 		2D5BBEA02C2E0C8800816AC0 /* SpaceXLaunches */ = {
 			isa = PBXGroup;
 			children = (
-				2D5BBECD2C2E122200816AC0 /* Model */,
+				2D5BBECD2C2E122200816AC0 /* Models */,
+				2D5BBEE02C2E291D00816AC0 /* Networking */,
 				2D5BBEA12C2E0C8800816AC0 /* SpaceXLaunchesApp.swift */,
 				2D5BBEA32C2E0C8800816AC0 /* ContentView.swift */,
 				2D5BBEA52C2E0C8800816AC0 /* Item.swift */,
@@ -149,7 +152,7 @@
 			path = SpaceXLaunchesUITests;
 			sourceTree = "<group>";
 		};
-		2D5BBECD2C2E122200816AC0 /* Model */ = {
+		2D5BBECD2C2E122200816AC0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2D5BBECE2C2E138B00816AC0 /* Launch.swift */,
@@ -162,7 +165,15 @@
 				2D5BBEDC2C2E142500816AC0 /* Reddit.swift */,
 				2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D5BBEE02C2E291D00816AC0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D5BBEE12C2E294000816AC0 /* ApiClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				2D5BBEA42C2E0C8800816AC0 /* ContentView.swift in Sources */,
 				2D5BBED92C2E13FC00816AC0 /* Flickr.swift in Sources */,
 				2D5BBEDF2C2E14BA00816AC0 /* Crew.swift in Sources */,
+				2D5BBEE22C2E294000816AC0 /* ApiClient.swift in Sources */,
 				2D5BBED52C2E13D000816AC0 /* Fairings.swift in Sources */,
 				2D5BBEA62C2E0C8800816AC0 /* Item.swift in Sources */,
 				2D5BBECF2C2E138B00816AC0 /* Launch.swift in Sources */,
