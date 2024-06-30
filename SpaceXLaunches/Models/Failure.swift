@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Failure
 struct Failure: Codable {
     let time: Int
-    let altitude: Int
+    let altitude: Int?
     let reason: String
     
     enum CodingKeys: String, CodingKey {

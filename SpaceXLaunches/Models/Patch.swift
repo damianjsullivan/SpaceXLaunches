@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - Patch
 struct Patch: Codable {
-    let small: String
-    let large: String
+    let small: String?
+    let large: String?
     
     enum CodingKeys: String, CodingKey {
         case small = "small"

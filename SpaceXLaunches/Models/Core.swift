@@ -9,14 +9,14 @@ import Foundation
 
 // MARK: - Core
 struct Core: Codable {
-    let core: String
-    let flight: Int
-    let gridfins: Bool
-    let legs: Bool
-    let reused: Bool
-    let landingAttempt: Bool
+    let core: String?
+    let flight: Int?
+    let gridfins: Bool?
+    let legs: Bool?
+    let reused: Bool?
+    let landingAttempt: Bool?
     let landingSuccess: Bool?
-    let landingType: String
+    let landingType: String?
     let landpad: String?
     
     enum CodingKeys: String, CodingKey {

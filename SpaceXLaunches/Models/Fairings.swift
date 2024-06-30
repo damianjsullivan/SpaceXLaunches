@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - Fairings
 struct Fairings: Codable {
-    let reused: Bool
-    let recoveryAttempt: Bool
-    let recovered: Bool
+    let reused: Bool?
+    let recoveryAttempt: Bool?
+    let recovered: Bool?
     let ships: [String]
     
     enum CodingKeys: String, CodingKey {

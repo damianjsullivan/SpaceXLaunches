@@ -11,16 +11,16 @@ import SwiftData
 // MARK: - Launch
 @Model
 class Launch: Identifiable, Codable {
-    let fairings: Fairings
+    let fairings: Fairings?
     let links: Links
-    let staticFireDateUTC: String
-    let staticFireDateUnix: Int
+    let staticFireDateUTC: String?
+    let staticFireDateUnix: Int?
     let net: Bool
-    let window: Int
+    let window: Int?
     let rocket: String
-    let success: Bool
+    let success: Bool?
     let failures: [Failure]
-    let details: String
+    let details: String?
     let crew: [Crew]
     let ships: [String]
     let capsules: [String]
@@ -36,8 +36,7 @@ class Launch: Identifiable, Codable {
     let cores: [Core]
     let autoUpdate: Bool
     let tbd: Bool
-    let launchLibraryID: UUID?
-    @Attribute(.unique)
+    let launchLibraryID: String?
     let id: String
     
     enum CodingKeys: String, CodingKey {
@@ -71,16 +70,16 @@ class Launch: Identifiable, Codable {
     }
     
     init(
-        fairings: Fairings,
+        fairings: Fairings?,
         links: Links,
-        staticFireDateUTC: String,
-        staticFireDateUnix: Int,
+        staticFireDateUTC: String?,
+        staticFireDateUnix: Int?,
         net: Bool,
-        window: Int,
+        window: Int?,
         rocket: String,
-        success: Bool,
+        success: Bool?,
         failures: [Failure],
-        details: String,
+        details: String?,
         crew: [Crew],
         ships: [String],
         capsules: [String],
@@ -96,7 +95,7 @@ class Launch: Identifiable, Codable {
         cores: [Core],
         autoUpdate: Bool,
         tbd: Bool,
-        launchLibraryID: UUID?,
+        launchLibraryID: String?,
         id: String) {
         self.fairings = fairings
         self.links = links
@@ -129,22 +128,22 @@ class Launch: Identifiable, Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.fairings = try container.decode(Fairings.self, forKey: .fairings)
+        self.fairings = try container.decode(Fairings?.self, forKey: .fairings)
         self.links = try container.decode(Links.self, forKey: .links)
-        self.staticFireDateUTC = try container.decode(String.self, forKey: .staticFireDateUTC)
-        self.staticFireDateUnix = try container.decode(Int.self, forKey: .staticFireDateUnix)
+        self.staticFireDateUTC = try container.decode(String?.self, forKey: .staticFireDateUTC)
+        self.staticFireDateUnix = try container.decode(Int?.self, forKey: .staticFireDateUnix)
         self.net = try container.decode(Bool.self, forKey: .net)
-        self.window = try container.decode(Int.self, forKey: .window)
+        self.window = try container.decode(Int?.self, forKey: .window)
         self.rocket = try container.decode(String.self, forKey: .rocket)
-        self.success = try container.decode(Bool.self, forKey: .success)
+        self.success = try container.decode(Bool?.self, forKey: .success)
         self.failures = try container.decode([Failure].self, forKey: .failures)
-        self.details = try container.decode(String.self, forKey: .details)
+        self.details = try container.decode(String?.self, forKey: .details)
         self.crew = try container.decode([Crew].self, forKey: .crew)
         self.ships = try container.decode([String].self, forKey: .ships)
         self.capsules = try container.decode([String].self, forKey: .capsules)
         self.payloads = try container.decode([String].self, forKey: .payloads)
         self.launchpad = try container.decode(String.self, forKey: .launchpad)
-        self.flightNumber = try container.decode(Int.self, forKey: .launchpad)
+        self.flightNumber = try container.decode(Int.self, forKey: .flightNumber)
         self.name = try container.decode(String.self, forKey: .name)
         self.dateUTC = try container.decode(String.self, forKey: .dateUTC)
         self.dateUnix = try container.decode(Int.self, forKey: .dateUnix)
@@ -154,7 +153,7 @@ class Launch: Identifiable, Codable {
         self.cores = try container.decode([Core].self, forKey: .cores)
         self.autoUpdate = try container.decode(Bool.self, forKey: .autoUpdate)
         self.tbd = try container.decode(Bool.self, forKey: .tbd)
-        self.launchLibraryID = try container.decode(UUID.self, forKey: .launchLibraryID)
+        self.launchLibraryID = try container.decode(String?.self, forKey: .launchLibraryID)
         self.id = try container.decode(String.self, forKey: .id)
     }
     
