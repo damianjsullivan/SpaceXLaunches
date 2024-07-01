@@ -22,9 +22,33 @@ struct LaunchItemRowView: View {
         NavigationLink(destination: LaunchDetailView(launch: viewModel.launch)) {
             VStack(alignment: .leading) {
                 Text(viewModel.launch.name)
-                    .font(.headline)
-                Text("Date: \(viewModel.launch.dateUTC)")
-                Text("Status: \(viewModel.launch.success ?? false ? "Success" : "Failed")")
+                    .font(.title3)
+                HStack {
+                    Text("Date:")
+                        .fontWeight(.bold)
+                    Spacer()
+                    Text("\(viewModel.launch.dateLocal.formatted(date: .numeric, time: .shortened))")
+                }
+                HStack {
+                    Text("Status:")
+                        .fontWeight(.bold)
+                    Spacer()
+                    if viewModel.launch.success ?? false {
+                        Text("Success")
+                            .foregroundStyle(.green)
+                    }
+                    else {
+                        Text("Failed")
+                            .foregroundStyle(.red)
+                    }
+                }
+                if let failure = viewModel.launch.failures.first {
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("Reason:")
+                            .fontWeight(.bold)
+                        Text("\(failure.reason)")
+                    }
+                }
             }
         }
     }
