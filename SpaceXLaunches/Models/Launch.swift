@@ -30,7 +30,7 @@ class Launch: Identifiable, Codable {
     let name: String
     let dateUTC: String
     let dateUnix: Int
-    let dateLocal: Date
+    let dateLocal: String
     let datePrecision: String
     let upcoming: Bool
     let cores: [Core]
@@ -90,7 +90,7 @@ class Launch: Identifiable, Codable {
         name: String,
         dateUTC: String,
         dateUnix: Int,
-        dateLocal: Date,
+        dateLocal: String,
         datePrecision: String,
         upcoming: Bool,
         cores: [Core],
@@ -148,7 +148,7 @@ class Launch: Identifiable, Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.dateUTC = try container.decode(String.self, forKey: .dateUTC)
         self.dateUnix = try container.decode(Int.self, forKey: .dateUnix)
-        self.dateLocal = try container.decode(Date.self, forKey: .dateLocal)
+        self.dateLocal = try container.decode(String.self, forKey: .dateLocal)
         self.datePrecision = try container.decode(String.self, forKey: .datePrecision)
         self.upcoming = try container.decode(Bool.self, forKey: .upcoming)
         self.cores = try container.decode([Core].self, forKey: .cores)

@@ -24,10 +24,16 @@ struct LaunchItemRowView: View {
                 Text(viewModel.launch.name)
                     .font(.title3)
                 HStack {
-                    Text("Date:")
+                    Text("Date There:")
                         .fontWeight(.bold)
                     Spacer()
-                    Text("\(viewModel.launch.dateLocal.formatted(date: .numeric, time: .shortened))")
+                    Text(viewModel.dateThere)
+                }
+                HStack {
+                    Text("Date Here:")
+                        .fontWeight(.bold)
+                    Spacer()
+                    Text(viewModel.dateHere)
                 }
                 HStack {
                     Text("Status:")
