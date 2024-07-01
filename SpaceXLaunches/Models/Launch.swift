@@ -37,6 +37,7 @@ class Launch: Identifiable, Codable {
     let autoUpdate: Bool
     let tbd: Bool
     let launchLibraryID: String?
+    @Attribute(.unique) 
     let id: String
     
     enum CodingKeys: String, CodingKey {
