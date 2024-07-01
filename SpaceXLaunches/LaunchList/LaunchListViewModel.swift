@@ -28,7 +28,7 @@ class LaunchListViewModel {
     
     func fetchLaunches() {
         do {
-            let descriptor = FetchDescriptor<Launch>(sortBy: [SortDescriptor(\.dateUTC, order: .forward)])
+            let descriptor = FetchDescriptor<Launch>(sortBy: [SortDescriptor(\.dateUTC, order: .reverse)])
             launches = try modelContext.fetch(descriptor)
         } catch {
             print("Fetch failed")

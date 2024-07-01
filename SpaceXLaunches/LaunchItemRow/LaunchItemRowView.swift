@@ -23,37 +23,11 @@ struct LaunchItemRowView: View {
             VStack(alignment: .leading) {
                 Text(viewModel.launch.name)
                     .font(.title3)
-                HStack {
-                    Text("Date There:")
-                        .fontWeight(.bold)
-                    Spacer()
-                    Text(viewModel.dateThere)
-                }
-                HStack {
-                    Text("Date Here:")
-                        .fontWeight(.bold)
-                    Spacer()
-                    Text(viewModel.dateHere)
-                }
-                HStack {
-                    Text("Status:")
-                        .fontWeight(.bold)
-                    Spacer()
-                    if viewModel.launch.success ?? false {
-                        Text("Success")
-                            .foregroundStyle(.green)
-                    }
-                    else {
-                        Text("Failed")
-                            .foregroundStyle(.red)
-                    }
-                }
+                LabeledContent("Date There", value: viewModel.dateThere)
+                LabeledContent("Date Here", value: viewModel.dateHere)
+                LabeledContent("Status", value: viewModel.launch.success ?? false ? "Success" : "Failed")
                 if let failure = viewModel.launch.failures.first {
-                    HStack(alignment: .firstTextBaseline) {
-                        Text("Reason:")
-                            .fontWeight(.bold)
-                        Text("\(failure.reason)")
-                    }
+                    LabeledContent("Reason", value: failure.reason)
                 }
             }
         }
