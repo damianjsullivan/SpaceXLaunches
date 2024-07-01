@@ -12,7 +12,7 @@ import SwiftData
 struct SpaceXLaunchesApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Launch.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct SpaceXLaunchesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchListView(modelContext: sharedModelContainer.mainContext)
         }
         .modelContainer(sharedModelContainer)
     }

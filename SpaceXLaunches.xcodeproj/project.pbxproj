@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D5BBEA22C2E0C8800816AC0 /* SpaceXLaunchesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEA12C2E0C8800816AC0 /* SpaceXLaunchesApp.swift */; };
-		2D5BBEA42C2E0C8800816AC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEA32C2E0C8800816AC0 /* ContentView.swift */; };
-		2D5BBEA62C2E0C8800816AC0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEA52C2E0C8800816AC0 /* Item.swift */; };
 		2D5BBEA82C2E0C8800816AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5BBEA72C2E0C8800816AC0 /* Assets.xcassets */; };
 		2D5BBEAB2C2E0C8800816AC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5BBEAA2C2E0C8800816AC0 /* Preview Assets.xcassets */; };
 		2D5BBEB52C2E0C8800816AC0 /* SpaceXLaunchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEB42C2E0C8800816AC0 /* SpaceXLaunchesTests.swift */; };
@@ -25,6 +23,12 @@
 		2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEDC2C2E142500816AC0 /* Reddit.swift */; };
 		2D5BBEDF2C2E14BA00816AC0 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */; };
 		2D5BBEE22C2E294000816AC0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEE12C2E294000816AC0 /* ApiClient.swift */; };
+		2D5BBEEF2C2E42A400816AC0 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEEE2C2E42A400816AC0 /* LaunchListViewModel.swift */; };
+		2D5BBEF12C2E42B500816AC0 /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEF02C2E42B500816AC0 /* LaunchListView.swift */; };
+		2D5BBEF42C2E42F500816AC0 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEF32C2E42F500816AC0 /* LaunchDetailView.swift */; };
+		2D5BBEF62C2E430000816AC0 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */; };
+		2D8548382C33437B00ECAFEE /* LaunchItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */; };
+		2D85483A2C33439000ECAFEE /* LaunchItemRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548392C33439000ECAFEE /* LaunchItemRowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +51,6 @@
 /* Begin PBXFileReference section */
 		2D5BBE9E2C2E0C8800816AC0 /* SpaceXLaunches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5BBEA12C2E0C8800816AC0 /* SpaceXLaunchesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchesApp.swift; sourceTree = "<group>"; };
-		2D5BBEA32C2E0C8800816AC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2D5BBEA52C2E0C8800816AC0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2D5BBEA72C2E0C8800816AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D5BBEAA2C2E0C8800816AC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D5BBEB02C2E0C8800816AC0 /* SpaceXLaunchesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXLaunchesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,12 @@
 		2D5BBEDC2C2E142500816AC0 /* Reddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
 		2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		2D5BBEE12C2E294000816AC0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		2D5BBEEE2C2E42A400816AC0 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
+		2D5BBEF02C2E42B500816AC0 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
+		2D5BBEF32C2E42F500816AC0 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
+		2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
+		2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemRowView.swift; sourceTree = "<group>"; };
+		2D8548392C33439000ECAFEE /* LaunchItemRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemRowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +124,12 @@
 		2D5BBEA02C2E0C8800816AC0 /* SpaceXLaunches */ = {
 			isa = PBXGroup;
 			children = (
+				2D5BBEED2C2E429200816AC0 /* LaunchList */,
+				2D8548362C3342DB00ECAFEE /* LaunchItemRow */,
+				2D5BBEF22C2E42D500816AC0 /* LaunchDetail */,
 				2D5BBECD2C2E122200816AC0 /* Models */,
 				2D5BBEE02C2E291D00816AC0 /* Networking */,
 				2D5BBEA12C2E0C8800816AC0 /* SpaceXLaunchesApp.swift */,
-				2D5BBEA32C2E0C8800816AC0 /* ContentView.swift */,
-				2D5BBEA52C2E0C8800816AC0 /* Item.swift */,
 				2D5BBEA72C2E0C8800816AC0 /* Assets.xcassets */,
 				2D5BBEA92C2E0C8800816AC0 /* Preview Content */,
 			);
@@ -174,6 +183,33 @@
 				2D5BBEE12C2E294000816AC0 /* ApiClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		2D5BBEED2C2E429200816AC0 /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				2D5BBEEE2C2E42A400816AC0 /* LaunchListViewModel.swift */,
+				2D5BBEF02C2E42B500816AC0 /* LaunchListView.swift */,
+			);
+			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		2D5BBEF22C2E42D500816AC0 /* LaunchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */,
+				2D5BBEF32C2E42F500816AC0 /* LaunchDetailView.swift */,
+			);
+			path = LaunchDetail;
+			sourceTree = "<group>";
+		};
+		2D8548362C3342DB00ECAFEE /* LaunchItemRow */ = {
+			isa = PBXGroup;
+			children = (
+				2D8548392C33439000ECAFEE /* LaunchItemRowModel.swift */,
+				2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */,
+			);
+			path = LaunchItemRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,19 +342,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5BBEA42C2E0C8800816AC0 /* ContentView.swift in Sources */,
+				2D5BBEF12C2E42B500816AC0 /* LaunchListView.swift in Sources */,
 				2D5BBED92C2E13FC00816AC0 /* Flickr.swift in Sources */,
+				2D5BBEF62C2E430000816AC0 /* LaunchDetailViewModel.swift in Sources */,
+				2D5BBEF42C2E42F500816AC0 /* LaunchDetailView.swift in Sources */,
+				2D5BBEEF2C2E42A400816AC0 /* LaunchListViewModel.swift in Sources */,
 				2D5BBEDF2C2E14BA00816AC0 /* Crew.swift in Sources */,
 				2D5BBEE22C2E294000816AC0 /* ApiClient.swift in Sources */,
 				2D5BBED52C2E13D000816AC0 /* Fairings.swift in Sources */,
-				2D5BBEA62C2E0C8800816AC0 /* Item.swift in Sources */,
 				2D5BBECF2C2E138B00816AC0 /* Launch.swift in Sources */,
 				2D5BBED12C2E13A800816AC0 /* Core.swift in Sources */,
 				2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */,
 				2D5BBEDB2C2E141000816AC0 /* Patch.swift in Sources */,
 				2D5BBED32C2E13BE00816AC0 /* Failure.swift in Sources */,
+				2D85483A2C33439000ECAFEE /* LaunchItemRowModel.swift in Sources */,
 				2D5BBEA22C2E0C8800816AC0 /* SpaceXLaunchesApp.swift in Sources */,
 				2D5BBED72C2E13E600816AC0 /* Links.swift in Sources */,
+				2D8548382C33437B00ECAFEE /* LaunchItemRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
