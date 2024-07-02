@@ -20,25 +20,45 @@ struct LaunchDetailView: View {
     
     
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                Text(viewModel.launch.name)
-                    .font(.largeTitle)
-                    .padding(.bottom, 10)
-                Text("Launch Date: \(viewModel.launch.dateUTC)")
-                Text("Status: \(viewModel.launch.success ?? false ? "Success" : "Failed")")
-                if let details = viewModel.launch.details {
-                    Text("Details: \(details)")
-                }
-//                ForEach(launch.crew) { crew in
-//                    VStack(alignment: .leading) {
-//                        Text("Crew Member: \(crew.name)")
-//                        Text("Agency: \(crew.agency)")
-//                    }
-//                    .padding(.top, 10)
-//                }
+        Form {
+             // Launch
+            Section(header: Text("Launch")) {
+                LabeledContent("Flight Number", value: String(viewModel.launch.flightNumber))
+                LabeledContent("Name", value: viewModel.launch.name)
+                LabeledContent("Status", value: viewModel.launch.success ?? false ? "Success" : "Failed")
+                LabeledContent("Date", value: viewModel.dateThere)
             }
-            .padding()
+
+            // Details
+            if let details = viewModel.launch.details {
+                Section(header: Text("Details")) {
+                    LabeledContent("Details", value: details)
+                        .labelsHidden()
+                }
+            }
+            
+            // Failures
+            if !viewModel.launch.failures.isEmpty {
+                Section(header: Text("Failures")) {
+                    ForEach(viewModel.launch.failures, id: \.time) { failure in
+                        LabeledContent("Reason", value: failure.reason)
+                    }
+                }
+            }
+            
+            // Crew
+            if !viewModel.launch.crew.isEmpty {
+                Section(header: Text("Crew")) {
+                    ForEach(viewModel.launch.crew, id: \.crew) { crew in
+                        LabeledContent(crew.role, value: crew.crew)
+                    }
+                }
+            }
+             // Rocket
+            Section(header: Text("Rocket")) {
+                LabeledContent("Rocket", value: viewModel.launch.rocket)
+            }
+            
         }
         .navigationBarTitle("Launch Details", displayMode: .inline)
     }
