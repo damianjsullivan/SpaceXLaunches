@@ -29,6 +29,12 @@
 		2D5BBEF62C2E430000816AC0 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */; };
 		2D8548382C33437B00ECAFEE /* LaunchItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */; };
 		2D85483A2C33439000ECAFEE /* LaunchItemRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548392C33439000ECAFEE /* LaunchItemRowModel.swift */; };
+		2D85483C2C338DB900ECAFEE /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85483B2C338DB900ECAFEE /* CrewMember.swift */; };
+		2D85483E2C338E8000ECAFEE /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85483D2C338E8000ECAFEE /* Rocket.swift */; };
+		2D8548402C33972100ECAFEE /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85483F2C33972100ECAFEE /* CrewView.swift */; };
+		2D8548422C33973100ECAFEE /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548412C33973100ECAFEE /* RocketView.swift */; };
+		2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */; };
+		2D8548462C3397CC00ECAFEE /* CrewMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,12 @@
 		2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
 		2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemRowView.swift; sourceTree = "<group>"; };
 		2D8548392C33439000ECAFEE /* LaunchItemRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemRowModel.swift; sourceTree = "<group>"; };
+		2D85483B2C338DB900ECAFEE /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
+		2D85483D2C338E8000ECAFEE /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		2D85483F2C33972100ECAFEE /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
+		2D8548412C33973100ECAFEE /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
+		2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
+		2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +185,8 @@
 				2D5BBEDA2C2E141000816AC0 /* Patch.swift */,
 				2D5BBEDC2C2E142500816AC0 /* Reddit.swift */,
 				2D5BBEDE2C2E14BA00816AC0 /* Crew.swift */,
+				2D85483B2C338DB900ECAFEE /* CrewMember.swift */,
+				2D85483D2C338E8000ECAFEE /* Rocket.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +213,10 @@
 			children = (
 				2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */,
 				2D5BBEF32C2E42F500816AC0 /* LaunchDetailView.swift */,
+				2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */,
+				2D85483F2C33972100ECAFEE /* CrewView.swift */,
+				2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */,
+				2D8548412C33973100ECAFEE /* RocketView.swift */,
 			);
 			path = LaunchDetail;
 			sourceTree = "<group>";
@@ -346,11 +364,15 @@
 				2D5BBED92C2E13FC00816AC0 /* Flickr.swift in Sources */,
 				2D5BBEF62C2E430000816AC0 /* LaunchDetailViewModel.swift in Sources */,
 				2D5BBEF42C2E42F500816AC0 /* LaunchDetailView.swift in Sources */,
+				2D85483C2C338DB900ECAFEE /* CrewMember.swift in Sources */,
 				2D5BBEEF2C2E42A400816AC0 /* LaunchListViewModel.swift in Sources */,
+				2D8548422C33973100ECAFEE /* RocketView.swift in Sources */,
 				2D5BBEDF2C2E14BA00816AC0 /* Crew.swift in Sources */,
 				2D5BBEE22C2E294000816AC0 /* ApiClient.swift in Sources */,
 				2D5BBED52C2E13D000816AC0 /* Fairings.swift in Sources */,
 				2D5BBECF2C2E138B00816AC0 /* Launch.swift in Sources */,
+				2D85483E2C338E8000ECAFEE /* Rocket.swift in Sources */,
+				2D8548462C3397CC00ECAFEE /* CrewMemberViewModel.swift in Sources */,
 				2D5BBED12C2E13A800816AC0 /* Core.swift in Sources */,
 				2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */,
 				2D5BBEDB2C2E141000816AC0 /* Patch.swift in Sources */,
@@ -359,6 +381,8 @@
 				2D5BBEA22C2E0C8800816AC0 /* SpaceXLaunchesApp.swift in Sources */,
 				2D5BBED72C2E13E600816AC0 /* Links.swift in Sources */,
 				2D8548382C33437B00ECAFEE /* LaunchItemRowView.swift in Sources */,
+				2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */,
+				2D8548402C33972100ECAFEE /* CrewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

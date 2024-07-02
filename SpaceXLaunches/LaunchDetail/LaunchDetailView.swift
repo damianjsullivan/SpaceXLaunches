@@ -48,16 +48,10 @@ struct LaunchDetailView: View {
             
             // Crew
             if !viewModel.launch.crew.isEmpty {
-                Section(header: Text("Crew")) {
-                    ForEach(viewModel.launch.crew, id: \.crew) { crew in
-                        LabeledContent(crew.role, value: crew.crew)
-                    }
-                }
+                CrewView(crew: viewModel.launch.crew)
             }
              // Rocket
-            Section(header: Text("Rocket")) {
-                LabeledContent("Rocket", value: viewModel.launch.rocket)
-            }
+            RocketView(rocketId: viewModel.launch.rocket)
             
         }
         .navigationBarTitle("Launch Details", displayMode: .inline)
