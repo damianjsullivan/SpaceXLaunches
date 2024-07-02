@@ -29,8 +29,8 @@ struct LaunchListView: View {
                 }
             }
             .navigationBarTitle("SpaceX Launches")
-            .onAppear {
-                viewModel.fetchLaunches()
+            .refreshable {
+                viewModel.fetchLaunchesFromApi()
             }
         }
     }
