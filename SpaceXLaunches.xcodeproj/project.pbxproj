@@ -35,6 +35,7 @@
 		2D8548422C33973100ECAFEE /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548412C33973100ECAFEE /* RocketView.swift */; };
 		2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */; };
 		2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */; };
+		2D8548482C33B2FB00ECAFEE /* LaunchImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		2D8548412C33973100ECAFEE /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
 		2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
 		2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
+		2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchImagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				2D85483F2C33972100ECAFEE /* CrewView.swift */,
 				2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */,
 				2D8548412C33973100ECAFEE /* RocketView.swift */,
+				2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */,
 			);
 			path = LaunchDetail;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				2D5BBEA22C2E0C8800816AC0 /* SpaceXLaunchesApp.swift in Sources */,
 				2D5BBED72C2E13E600816AC0 /* Links.swift in Sources */,
 				2D8548382C33437B00ECAFEE /* LaunchItemRowView.swift in Sources */,
+				2D8548482C33B2FB00ECAFEE /* LaunchImagesView.swift in Sources */,
 				2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */,
 				2D8548402C33972100ECAFEE /* CrewView.swift in Sources */,
 			);

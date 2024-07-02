@@ -52,6 +52,19 @@ struct LaunchDetailView: View {
              // Rocket
             RocketView(rocketId: viewModel.launch.rocket)
             
+            // Images
+            Section(header: Text("Images")) {
+                if let patchURL = viewModel.launch.links.patch.large {
+                    NavigationLink(destination: LaunchImagesView(imageURLs: [patchURL])) {
+                        Text("Patch")
+                    }
+                }
+                if !viewModel.launch.links.flickr.original.isEmpty {
+                    NavigationLink(destination: LaunchImagesView(imageURLs: viewModel.launch.links.flickr.original)) {
+                        Text("Flickr")
+                    }
+                }
+            }
         }
         .navigationBarTitle("Launch Details", displayMode: .inline)
     }
