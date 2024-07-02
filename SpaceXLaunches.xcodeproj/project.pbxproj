@@ -37,6 +37,8 @@
 		2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */; };
 		2D8548482C33B2FB00ECAFEE /* LaunchImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */; };
 		2D85484E2C340BAC00ECAFEE /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85484D2C340BAC00ECAFEE /* ApiClientProtocol.swift */; };
+		2D8548512C340DB600ECAFEE /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548502C340DB600ECAFEE /* MockApiClient.swift */; };
+		2D8548532C34120600ECAFEE /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548522C34120600ECAFEE /* ApiClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 		2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchImagesView.swift; sourceTree = "<group>"; };
 		2D85484D2C340BAC00ECAFEE /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		2D8548502C340DB600ECAFEE /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		2D8548522C34120600ECAFEE /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		2D5BBEB32C2E0C8800816AC0 /* SpaceXLaunchesTests */ = {
 			isa = PBXGroup;
 			children = (
+				2D85484F2C340DA300ECAFEE /* Networking */,
 				2D5BBEB42C2E0C8800816AC0 /* SpaceXLaunchesTests.swift */,
 			);
 			path = SpaceXLaunchesTests;
@@ -234,6 +239,15 @@
 				2D8548372C33437B00ECAFEE /* LaunchItemRowView.swift */,
 			);
 			path = LaunchItemRow;
+			sourceTree = "<group>";
+		};
+		2D85484F2C340DA300ECAFEE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D8548502C340DB600ECAFEE /* MockApiClient.swift */,
+				2D8548522C34120600ECAFEE /* ApiClientTests.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +412,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8548532C34120600ECAFEE /* ApiClientTests.swift in Sources */,
 				2D5BBEB52C2E0C8800816AC0 /* SpaceXLaunchesTests.swift in Sources */,
+				2D8548512C340DB600ECAFEE /* MockApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
