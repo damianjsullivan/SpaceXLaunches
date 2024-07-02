@@ -14,6 +14,8 @@ import Observation
 @Observable 
 class LaunchListViewModel {
     var launches: [Launch] = []
+    var showAlert = false
+    
     private var modelContext: ModelContext
     private var apiClient: ApiClient
     
@@ -32,6 +34,7 @@ class LaunchListViewModel {
             launches = try modelContext.fetch(descriptor)
         } catch {
             print("Fetch failed")
+            showAlert = true
         }
     }
     
@@ -43,6 +46,7 @@ class LaunchListViewModel {
             try modelContext.save()
         } catch {
             print("Failed to save context: \(error)")
+            showAlert = true
         }
     }
     
@@ -56,7 +60,12 @@ class LaunchListViewModel {
                 }
             } catch {
                 print("Failed to fetch launches: \(error)")
+                showAlert = true
             }
         }
+    }
+    
+    func dismissAlert(){
+        showAlert = false
     }
 }

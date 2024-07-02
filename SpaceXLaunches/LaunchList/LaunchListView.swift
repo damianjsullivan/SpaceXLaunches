@@ -33,6 +33,15 @@ struct LaunchListView: View {
                 viewModel.fetchLaunchesFromApi()
             }
         }
+        .alert(isPresented: $viewModel.showAlert) {
+            return Alert(
+                title: Text("Error"),
+                message: Text("Something went wrong."),
+                dismissButton: .default(Text("OK")) {
+                    viewModel.dismissAlert()
+                }
+            )
+        }
     }
 }
 
