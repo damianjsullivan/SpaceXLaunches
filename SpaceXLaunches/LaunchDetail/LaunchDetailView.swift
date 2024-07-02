@@ -47,9 +47,8 @@ struct LaunchDetailView: View {
             }
             
             // Crew
-            if !viewModel.launch.crew.isEmpty {
-                CrewView(crew: viewModel.launch.crew)
-            }
+            CrewView(crew: viewModel.launch.crew)
+            
              // Rocket
             RocketView(rocketId: viewModel.launch.rocket)
             

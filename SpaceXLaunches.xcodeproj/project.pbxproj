@@ -34,7 +34,7 @@
 		2D8548402C33972100ECAFEE /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85483F2C33972100ECAFEE /* CrewView.swift */; };
 		2D8548422C33973100ECAFEE /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548412C33973100ECAFEE /* RocketView.swift */; };
 		2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */; };
-		2D8548462C3397CC00ECAFEE /* CrewMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */; };
+		2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,7 @@
 		2D85483F2C33972100ECAFEE /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
 		2D8548412C33973100ECAFEE /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
 		2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
-		2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberViewModel.swift; sourceTree = "<group>"; };
+		2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +213,7 @@
 			children = (
 				2D5BBEF52C2E430000816AC0 /* LaunchDetailViewModel.swift */,
 				2D5BBEF32C2E42F500816AC0 /* LaunchDetailView.swift */,
-				2D8548452C3397CC00ECAFEE /* CrewMemberViewModel.swift */,
+				2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */,
 				2D85483F2C33972100ECAFEE /* CrewView.swift */,
 				2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */,
 				2D8548412C33973100ECAFEE /* RocketView.swift */,
@@ -372,7 +372,7 @@
 				2D5BBED52C2E13D000816AC0 /* Fairings.swift in Sources */,
 				2D5BBECF2C2E138B00816AC0 /* Launch.swift in Sources */,
 				2D85483E2C338E8000ECAFEE /* Rocket.swift in Sources */,
-				2D8548462C3397CC00ECAFEE /* CrewMemberViewModel.swift in Sources */,
+				2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */,
 				2D5BBED12C2E13A800816AC0 /* Core.swift in Sources */,
 				2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */,
 				2D5BBEDB2C2E141000816AC0 /* Patch.swift in Sources */,

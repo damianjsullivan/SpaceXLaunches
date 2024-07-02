@@ -11,18 +11,24 @@ struct CrewView: View {
     @State private var viewModel: CrewViewModel
     
     init(crew: [Crew]) {
-        let viewModel = CrewViewModel(
-            crew: crew
-        )
+        let viewModel = CrewViewModel(crew: crew)
         _viewModel = State(initialValue: viewModel)
     }
     
     var body: some View {
         Section(header: Text("Crew")) {
-            LabeledContent("TODO", value: "TODO")
-//            ForEach(viewModel.launch.crew, id: \.crew) { crew in
-//                LabeledContent(crew.role, value: crew.crew)
-//            }
+            if !viewModel.crewMembers.isEmpty {
+                ForEach(viewModel.crewMembers, id: \.name) { item in
+                    LabeledContent("Name", value: item.name)
+                }
+            }
+            else {
+                LabeledContent("-", value: "none")
+                    .labelsHidden()
+            }
+        }
+        .task {
+            await viewModel.fetchCrew()
         }
     }
 }

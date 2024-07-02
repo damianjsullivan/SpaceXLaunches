@@ -9,20 +9,34 @@ import Foundation
 
 @Observable
 class CrewViewModel {
-    var crewMemberId: String
+    var crewMembers = [CrewMember]()
+
+    private var crew: [Crew]
     private var apiClient: ApiClient
+    private var dataLoaded: Bool = false
     
-    init(crewMemberId: String,
+    init(crew: [Crew],
          apiClient: ApiClient = ApiClient()
     ) {
-        self.crewMemberId = crewMemberId
+        self.crew = crew
         self.apiClient = apiClient
     }
     
-    func fetchCrewMember(id: String) async throws -> CrewMember? {
+    func fetchCrew() async {
+        if dataLoaded {
+            return
+        }
+        for item in crew {
+            if let crewMember = await fetchCrewMember(id: item.crew) {
+                crewMembers.append(crewMember)
+            }
+            dataLoaded = true
+        }
+    }
+    
+    func fetchCrewMember(id: String) async -> CrewMember? {
         do {
-            let crewMember = try await apiClient.fetchCrewMember(id: id)
-            return crewMember
+            return try await apiClient.fetchCrewMember(id: id)
         } catch {
             print("Failed to fetch crew member: \(error)")
             return nil

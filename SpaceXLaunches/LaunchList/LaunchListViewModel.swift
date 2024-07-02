@@ -13,7 +13,7 @@ import Observation
 
 @Observable 
 class LaunchListViewModel {
-    var launches = [Launch]()
+    var launches: [Launch] = []
     private var modelContext: ModelContext
     private var apiClient: ApiClient
     

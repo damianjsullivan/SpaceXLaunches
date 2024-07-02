@@ -19,12 +19,13 @@ struct RocketView: View {
         Section(header: Text("Rocket")) {
             if let rocket = viewModel.rocket {
                 LabeledContent("Name", value: String(rocket.name))
-                LabeledContent("Height", value: String(rocket.height.meters))
-                LabeledContent("Diameter", value: String(rocket.diameter.meters))
+                LabeledContent("Height", value: "\(rocket.height.meters) m")
+                LabeledContent("Diameter", value: "\(rocket.diameter.meters) m")
                 LabeledContent("Mass", value: "\(rocket.mass.kg) kg")
             }
             else {
-                LabeledContent("-", value: "-")
+                LabeledContent("-", value: "details not available")
+                    .labelsHidden()
             }
         }
         .task {
