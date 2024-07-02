@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ApiClient {
+class ApiClient: ApiClientProtocol {
     private let baseURL = "https://api.spacexdata.com"
     
     func fetchLaunches() async throws -> [Launch] {

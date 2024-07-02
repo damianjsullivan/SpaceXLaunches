@@ -12,10 +12,10 @@ class RocketViewModel {
     var rocket: Rocket?
 
     private var rocketId: String
-    private var apiClient: ApiClient
+    private var apiClient: ApiClientProtocol
     
     init(rocketId: String,
-         apiClient: ApiClient = ApiClient()
+         apiClient: ApiClientProtocol = ApiClient()
     ) {
         self.rocketId = rocketId
         self.apiClient = apiClient

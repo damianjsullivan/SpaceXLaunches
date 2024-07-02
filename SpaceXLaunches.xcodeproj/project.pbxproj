@@ -36,6 +36,7 @@
 		2D8548442C3397BC00ECAFEE /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */; };
 		2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */; };
 		2D8548482C33B2FB00ECAFEE /* LaunchImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */; };
+		2D85484E2C340BAC00ECAFEE /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D85484D2C340BAC00ECAFEE /* ApiClientProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		2D8548432C3397BC00ECAFEE /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
 		2D8548452C3397CC00ECAFEE /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 		2D8548472C33B2FB00ECAFEE /* LaunchImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchImagesView.swift; sourceTree = "<group>"; };
+		2D85484D2C340BAC00ECAFEE /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				2D5BBEE12C2E294000816AC0 /* ApiClient.swift */,
+				2D85484D2C340BAC00ECAFEE /* ApiClientProtocol.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				2D5BBED52C2E13D000816AC0 /* Fairings.swift in Sources */,
 				2D5BBECF2C2E138B00816AC0 /* Launch.swift in Sources */,
 				2D85483E2C338E8000ECAFEE /* Rocket.swift in Sources */,
+				2D85484E2C340BAC00ECAFEE /* ApiClientProtocol.swift in Sources */,
 				2D8548462C3397CC00ECAFEE /* CrewViewModel.swift in Sources */,
 				2D5BBED12C2E13A800816AC0 /* Core.swift in Sources */,
 				2D5BBEDD2C2E142500816AC0 /* Reddit.swift in Sources */,

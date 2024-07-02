@@ -12,11 +12,11 @@ class CrewViewModel {
     var crewMembers = [CrewMember]()
 
     private var crew: [Crew]
-    private var apiClient: ApiClient
+    private var apiClient: ApiClientProtocol
     private var dataLoaded: Bool = false
     
     init(crew: [Crew],
-         apiClient: ApiClient = ApiClient()
+         apiClient: ApiClientProtocol = ApiClient()
     ) {
         self.crew = crew
         self.apiClient = apiClient

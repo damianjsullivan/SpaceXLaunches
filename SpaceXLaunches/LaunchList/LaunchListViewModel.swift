@@ -17,10 +17,10 @@ class LaunchListViewModel {
     var showAlert = false
     
     private var modelContext: ModelContext
-    private var apiClient: ApiClient
+    private var apiClient: ApiClientProtocol
     
     init(modelContext: ModelContext,
-         apiClient: ApiClient = ApiClient()
+         apiClient: ApiClientProtocol = ApiClient()
     ) {
         self.modelContext = modelContext
         self.apiClient = apiClient
