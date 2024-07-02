@@ -9,7 +9,9 @@ import Foundation
 
 @Observable
 class RocketViewModel {
-    var rocketId: String
+    var rocket: Rocket?
+
+    private var rocketId: String
     private var apiClient: ApiClient
     
     init(rocketId: String,
@@ -19,13 +21,11 @@ class RocketViewModel {
         self.apiClient = apiClient
     }
     
-    func fetchRocket(id: String) async throws -> Rocket? {
+    func fetchRocket() async {
         do {
-            let rocket = try await apiClient.fetchRocket(id: id)
-            return rocket
+            rocket = try await apiClient.fetchRocket(id: rocketId)
         } catch {
             print("Failed to fetch rocket: \(error)")
-            return nil
         }
     }
 }
